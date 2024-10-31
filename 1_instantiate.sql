@@ -8,12 +8,12 @@
 
 -- The following cardinality rules are assumed:
 -- > Experiments consist of at least one process instance. A process instance belongs to one and only one experiment.
--- > A process instance is run on one and only one piece of equipment. A piece of equipment may be used for many process instances, or none. 
--- > A process instance corresponds to one and only one set of process parameters. A set of process parameters can be used for many process instances, or none.
+-- > A process instance is run on one and only one piece of equipment. A piece of equipment may be used for one or many process instances. 
+-- > A process instance corresponds to one and only one set of process parameters. A set of process parameters can be used for one or many process instances.
 -- > A process instance contains at least one sample. A specific sample belongs to one and only one process instance.
 -- > A sample will have at least multiple analyses performed on it. A specific analysis belongs to one and only one sample.
--- > An analysis instance corresponds to one and only one set of analysis parameters. A set of analysis parameters may be used for many analyses, or none.
--- > An analysis instance is performed by one and only one instrument. An instrument can be used for many different analyses, or none.
+-- > An analysis instance corresponds to one and only one set of analysis parameters. A set of analysis parameters may be used for one or many analyses.
+-- > An analysis instance is performed by one and only one instrument. An instrument can be used for one or many different analyses.
 
 
 CREATE TABLE experiments (
